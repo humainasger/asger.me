@@ -27,29 +27,19 @@ import {
 export default function ResumePage() {
   return (
     <div className="min-h-screen bg-[#FBFBF9]">
-      <div className="max-w-7xl mx-auto p-6 sm:p-8 lg:p-12">
+      <div className="max-w-[900px] mx-auto p-6 sm:p-8">
         {/* Header */}
-        <div className="flex flex-col lg:flex-row justify-between items-start mb-16 gap-8">
-          <div className="flex-1 max-w-2xl">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-mono font-bold text-gray-900 mb-8 leading-tight">
-              {DATA.name}
-            </h1>
-            <div className="prose prose-gray max-w-none">
-              <p className="text-gray-700 text-sm sm:text-base leading-relaxed font-sans-body">
-                Results-driven Technical Marketer & Growth Leader with extensive B2B tech
-                experience, specializing in Account-Based Marketing (ABM), demand
-                generation, and intent marketing. Expert at driving growth through strategic
-                planning, data-driven decisions, and close collaboration with partners, sales
-                teams, and management to align marketing strategies with sales drives and
-                enhance go-to-market effectiveness. Skilled in event marketing and leveraging
-                digital channels to maximize impact.
-              </p>
+        <div className="mb-12">
+          <div className="flex flex-col sm:flex-row justify-between items-start gap-6 mb-8">
+            <div className="flex-1">
+              <h1 className="text-3xl sm:text-4xl font-mono font-bold text-gray-900 mb-6 leading-tight">
+                {DATA.name}
+              </h1>
             </div>
-          </div>
           
-          {/* Profile Card with Dropdown */}
-          <div className="lg:ml-8 w-full lg:w-auto">
-            <Card className="w-full lg:w-80 border border-gray-300 shadow-sm bg-white">
+            {/* Profile Card with Dropdown */}
+            <div className="w-full sm:w-auto sm:ml-6">
+              <Card className="w-full sm:w-80 border border-gray-300 shadow-sm bg-white">
               <CardContent className="p-6">
                 <div className="flex items-center gap-4">
                   <Avatar className="h-16 w-16">
@@ -94,12 +84,24 @@ export default function ResumePage() {
               </CardContent>
             </Card>
           </div>
+          </div>
+
+          {/* Description */}
+          <div className="prose prose-gray max-w-none">
+            <p className="text-gray-700 text-sm sm:text-base leading-relaxed font-sans-body">
+              Results-driven Technical Marketer & Growth Leader with extensive B2B tech
+              experience, specializing in Account-Based Marketing (ABM), demand
+              generation, and intent marketing. Expert at driving growth through strategic
+              planning, data-driven decisions, and close collaboration with partners, sales
+              teams, and management to align marketing strategies with sales drives and
+              enhance go-to-market effectiveness. Skilled in event marketing and leveraging
+              digital channels to maximize impact.
+            </p>
+          </div>
         </div>
 
-        {/* Main Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16">
-          {/* Left Column - Experience */}
-          <div className="lg:col-span-2 space-y-12">
+        {/* Main Content - Single Column */}
+        <div className="space-y-12">
             {/* Relevant Section */}
             <section className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm">
               <div className="flex items-center gap-3 mb-6">
@@ -179,12 +181,9 @@ export default function ResumePage() {
                 ))}
               </div>
             </section>
-          </div>
 
-          {/* Right Column */}
-          <div className="space-y-10">
-            {/* Achievements Section */}
-            <section>
+          {/* Achievements Section */}
+          <section>
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
                 <h2 className="text-xl font-mono font-bold text-gray-900 tracking-wide uppercase">Achievements</h2>
@@ -211,8 +210,8 @@ export default function ResumePage() {
               </div>
             </section>
 
-            {/* Education Section */}
-            <section>
+          {/* Education Section */}
+          <section>
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-3 h-3 bg-purple-600 rounded-full"></div>
                 <h2 className="text-xl font-mono font-bold text-gray-900 tracking-wide uppercase">Education</h2>
@@ -239,8 +238,8 @@ export default function ResumePage() {
               </div>
             </section>
 
-            {/* Additional Section */}
-            <section>
+          {/* Additional Section */}
+          <section>
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-3 h-3 bg-green-600 rounded-full"></div>
                 <h2 className="text-xl font-mono font-bold text-gray-900 tracking-wide uppercase">Additional</h2>
@@ -260,7 +259,6 @@ export default function ResumePage() {
                 ))}
               </div>
             </section>
-          </div>
         </div>
       </div>
     </div>
