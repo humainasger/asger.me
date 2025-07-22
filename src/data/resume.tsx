@@ -1,7 +1,8 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+import { ResumeData } from "@/types";
 
-export const DATA = {
+export const DATA: ResumeData = {
   name: "Asger Johannes Teglgaard",
   initials: "AT",
   url: "https://asger.me",
