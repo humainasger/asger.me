@@ -108,14 +108,14 @@ export default async function LocaleLayout({
     <html lang={locale} suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen bg-background font-sans-body antialiased",
           fontSans.variable,
           ibmPlexMono.variable,
           ibmPlexSans.variable
         )}
       >
-        <div className="max-w-2xl mx-auto py-12 sm:py-24 px-6">
-        <ThemeProvider attribute="class" defaultTheme="dark">
+        <div className="max-w-[900px] mx-auto py-12 sm:py-24 px-6">
+        <ThemeProvider attribute="class" defaultTheme="light">
           <NextIntlClientProvider messages={messages}>
             <TooltipProvider delayDuration={0}>
               {children}

@@ -83,7 +83,7 @@ export const DATA: ResumeData = {
       badges: ["B2B", "SaaS", "Enterprise", "DAM"],
       location: "Remote",
       title: "Sr. Growth Marketing Manager",
-      logoUrl: "/keyshot.png",
+      logoUrl: "/kslogo.png",
       start: "Jun 2023",
       end: "present",
       description:
@@ -95,7 +95,7 @@ export const DATA: ResumeData = {
       badges: ["B2B", "Tech", "Consulting"],
       location: "Copenhagen, Denmark",
       title: "Head of Marketing for LearnX",
-      logoUrl: "/opus.png",
+      logoUrl: "/opuslogo.png",
       start: "May 2023",
       end: "January 2024",
       description:
@@ -107,7 +107,7 @@ export const DATA: ResumeData = {
       href: "https://kubo-robot.com",
       location: "Copenhagen, Denmark",
       title: "Growth & Retention Manager",
-      logoUrl: "/kubo.png",
+      logoUrl: "/kubologo.png",
       start: "May 2021",
       end: "April 2023",
       description:
@@ -119,7 +119,7 @@ export const DATA: ResumeData = {
       badges: ["SaaS", "B2B", "Food"],
       location: "Copenhagen, Denmark",
       title: "Head of Marketing",
-      logoUrl: "/quickorder.png",
+      logoUrl: "/quickorderlogo.png",
       start: "Oct 2019",
       end: "May 2021",
       description:
@@ -131,7 +131,7 @@ export const DATA: ResumeData = {
       badges: ["Consulting", "B2B"],
       location: "Copenhagen, Denmark",
       title: "Digital marketing & Webshop Leader",
-      logoUrl: "/ramboll.png",
+      logoUrl: "/raunsborglogo.png",
       start: "Feb 2019",
       end: "Sep 2021",
       description:
@@ -143,7 +143,7 @@ export const DATA: ResumeData = {
       badges: ["Agency", "B2B"],
       location: "Copenhagen, Denmark",
       title: "Founder",
-      logoUrl: "/coweb.png",
+      logoUrl: "/coweblogo.png",
       start: "Oct 2015",
       end: "Nov 2018",
       description:
@@ -155,7 +155,7 @@ export const DATA: ResumeData = {
       badges: ["E-commerce", "B2C"],
       location: "Copenhagen, Denmark",
       title: "Founder",
-      logoUrl: "/treetime.png",
+      logoUrl: "/treetimelogo.png",
       start: "Sep 2014",
       end: "Sep 2018",
       description:
@@ -167,7 +167,7 @@ export const DATA: ResumeData = {
       school: "University College Lillebælt",
       href: "https://ucl.dk",
       degree: "AP Graduate in Marketing Management",
-      logoUrl: "/ucl.png",
+      logoUrl: "/laurier.png",
       start: "2015",
       end: "2017",
     },

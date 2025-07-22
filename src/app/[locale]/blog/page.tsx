@@ -18,7 +18,7 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
   return (
     <section>
       <BlurFade delay={BLUR_FADE_DELAY}>
-        <h1 className="font-medium text-2xl mb-8 tracking-tighter">{t('title')}</h1>
+        <h1 className="font-mono font-bold text-2xl mb-8 tracking-tighter">{t('title')}</h1>
       </BlurFade>
       {posts
         .sort((a, b) => {
@@ -36,8 +36,8 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
               href={`/${locale}/blog/${post.slug}`}
             >
               <div className="w-full flex flex-col">
-                <p className="tracking-tight">{post.metadata.title}</p>
-                <p className="h-6 text-xs text-muted-foreground">
+                <p className="tracking-tight font-mono font-semibold">{post.metadata.title}</p>
+                <p className="h-6 text-xs text-muted-foreground font-sans-body">
                   {post.metadata.publishedAt}
                 </p>
               </div>

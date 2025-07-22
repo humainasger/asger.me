@@ -148,10 +148,18 @@ export default function ResumePage() {
                   <div key={index} className="relative bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
                     <div className="flex gap-6">
                       <div className="flex flex-col items-center flex-shrink-0">
-                        <div className="w-14 h-14 bg-gray-50 border-2 border-gray-200 rounded-lg flex items-center justify-center">
-                          <span className="text-base font-mono font-bold text-gray-700">
-                            {job.company.charAt(0)}
-                          </span>
+                        <div className="w-14 h-14 bg-white border-2 border-gray-200 rounded-lg flex items-center justify-center p-2">
+                          {job.logoUrl ? (
+                            <img
+                              src={job.logoUrl}
+                              alt={`${job.company} logo`}
+                              className="w-full h-full object-contain"
+                            />
+                          ) : (
+                            <span className="text-base font-mono font-bold text-gray-700">
+                              {job.company.charAt(0)}
+                            </span>
+                          )}
                         </div>
                       </div>
 

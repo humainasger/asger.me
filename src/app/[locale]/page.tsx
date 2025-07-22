@@ -22,12 +22,12 @@ export default async function Page() {
             <div className="flex-1 space-y-6 text-center lg:text-left">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
-                className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight"
+                className="text-4xl md:text-6xl lg:text-7xl font-mono font-bold tracking-tight leading-tight"
                 yOffset={8}
                 text={`${t('title')} ${t('subtitle')} ${DATA.name.split(" ")[0]}`}
               />
               <BlurFadeText
-                className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed"
+                className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed font-sans-body"
                 delay={BLUR_FADE_DELAY}
                 text={t('description')}
               />
@@ -88,7 +88,7 @@ export default async function Page() {
         <div className="space-y-12 w-full">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              <h2 className="text-3xl font-mono font-bold tracking-tighter sm:text-5xl">
                 {t('work')}
               </h2>
             </div>
@@ -99,14 +99,14 @@ export default async function Page() {
                 key={work.company}
                 delay={BLUR_FADE_DELAY * 12 + id * 0.05}
               >
-                <div className="flex items-start gap-6 p-6 rounded-xl bg-card/30 border border-border/50 hover:bg-card/50 transition-all duration-300">
-                  <Avatar className="size-16 border border-border/50 bg-muted/50 flex-shrink-0">
+                <div className="flex items-start gap-6 p-6 rounded-xl bg-card border border-border shadow-sm hover:shadow-md transition-all duration-300">
+                  <Avatar className="size-16 border border-border bg-white flex-shrink-0">
                     <AvatarImage
                       src={work.logoUrl}
                       alt={work.company}
                       className="object-contain"
                     />
-                    <AvatarFallback className="text-lg font-medium">
+                    <AvatarFallback className="text-lg font-mono font-medium">
                       {work.company[0]}
                     </AvatarFallback>
                   </Avatar>
@@ -114,10 +114,10 @@ export default async function Page() {
                   <div className="flex-1 min-w-0 space-y-3">
                     <div className="flex items-start justify-between gap-4">
                       <div className="space-y-1">
-                        <h3 className="text-xl font-semibold">{work.company}</h3>
-                        <p className="text-base text-muted-foreground">{work.title}</p>
+                        <h3 className="text-xl font-mono font-semibold">{work.company}</h3>
+                        <p className="text-base text-muted-foreground font-sans-body">{work.title}</p>
                       </div>
-                      <time className="text-sm text-muted-foreground font-medium whitespace-nowrap">
+                      <time className="text-sm text-muted-foreground font-sans-body font-medium whitespace-nowrap">
                         {work.start} - {work.end}
                       </time>
                     </div>
@@ -128,13 +128,13 @@ export default async function Page() {
                           <Badge
                             key={index}
                             variant="outline"
-                            className="text-xs px-3 py-1 bg-muted/30 border-border/50"
+                            className="text-xs px-3 py-1 bg-blue-100 text-blue-800 border-0 font-sans-body"
                           >
                             {badge}
                           </Badge>
                         ))}
                         {work.badges.length > 4 && (
-                          <Badge variant="outline" className="text-xs px-3 py-1 bg-muted/30 border-border/50">
+                          <Badge variant="outline" className="text-xs px-3 py-1 bg-blue-100 text-blue-800 border-0 font-sans-body">
                             +{work.badges.length - 4} more
                           </Badge>
                         )}
@@ -142,7 +142,7 @@ export default async function Page() {
                     )}
 
                     {work.description && (
-                      <p className="text-sm text-muted-foreground leading-relaxed pt-2">
+                      <p className="text-sm text-muted-foreground leading-relaxed pt-2 font-sans-body">
                         {work.description}
                       </p>
                     )}
@@ -157,10 +157,10 @@ export default async function Page() {
         <div className="space-y-16 w-full">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <div className="text-center space-y-6 max-w-3xl mx-auto">
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+              <h2 className="text-4xl md:text-5xl font-mono font-bold tracking-tight">
                 {t('services.title')}
               </h2>
-              <p className="text-xl text-muted-foreground leading-relaxed">
+              <p className="text-xl text-muted-foreground leading-relaxed font-sans-body">
                 {t('services.subtitle')}
               </p>
             </div>
@@ -172,17 +172,17 @@ export default async function Page() {
                 key={service.title}
                 delay={BLUR_FADE_DELAY * 10 + id * 0.05}
               >
-                <Card className="h-full p-8 group hover:scale-[1.02] transition-all duration-300 bg-card/50 border-border/50">
+                <Card className="h-full p-8 group hover:scale-[1.02] transition-all duration-300 bg-card border border-border shadow-sm">
                   <div className="space-y-6">
                     <div className="flex items-start gap-4">
                       <div className="text-4xl flex-shrink-0">{service.icon}</div>
                       <div className="space-y-2 flex-1">
-                        <h3 className="text-2xl font-bold">{service.title}</h3>
-                        <p className="text-lg font-semibold text-primary">{service.price}</p>
+                        <h3 className="text-2xl font-mono font-bold">{service.title}</h3>
+                        <p className="text-lg font-sans-body font-semibold text-primary">{service.price}</p>
                       </div>
                     </div>
 
-                    <p className="text-muted-foreground leading-relaxed text-base">
+                    <p className="text-muted-foreground leading-relaxed text-base font-sans-body">
                       {service.description}
                     </p>
                   </div>
@@ -195,12 +195,12 @@ export default async function Page() {
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
-            <h2 className="text-xl font-bold">{t('skills')}</h2>
+            <h2 className="text-xl font-mono font-bold">{t('skills')}</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-2">
             {DATA.skills.map((skill, id) => (
               <BlurFade key={skill} delay={BLUR_FADE_DELAY * 12 + id * 0.05}>
-                <Badge key={skill} variant="outline" className="text-xs px-3 py-1 bg-muted/30 border-border/50">{skill}</Badge>
+                <Badge key={skill} variant="outline" className="text-xs px-3 py-1 bg-blue-100 text-blue-800 border-0 font-sans-body">{skill}</Badge>
               </BlurFade>
             ))}
           </div>
@@ -210,7 +210,7 @@ export default async function Page() {
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 15}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              <h2 className="text-3xl font-mono font-bold tracking-tighter sm:text-5xl">
                 {t('testimonials.title')}
               </h2>
             </div>
@@ -221,11 +221,11 @@ export default async function Page() {
                 key={testimonial.author}
                 delay={BLUR_FADE_DELAY * 16 + id * 0.05}
               >
-                <Card className="h-full">
+                <Card className="h-full bg-card border border-border shadow-sm">
                   <CardContent className="pt-6">
                     <blockquote className="space-y-2">
-                      <p className="text-lg italic">&ldquo;{testimonial.quote}&rdquo;</p>
-                      <footer className="text-sm text-muted-foreground">
+                      <p className="text-lg italic font-sans-body">&ldquo;{testimonial.quote}&rdquo;</p>
+                      <footer className="text-sm text-muted-foreground font-sans-body">
                         — {testimonial.author}
                       </footer>
                     </blockquote>
@@ -240,13 +240,13 @@ export default async function Page() {
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 17}>
             <div className="space-y-3">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm font-sans-body">
                 {t('contactMe')}
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              <h2 className="text-3xl font-mono font-bold tracking-tighter sm:text-5xl">
                 {t('contactMe')}
               </h2>
-              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-sans-body">
                 {t('contactSubtitle')}
               </p>
               <div className="pt-4">
