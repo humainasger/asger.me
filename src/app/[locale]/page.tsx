@@ -68,20 +68,35 @@ export default async function Page() {
           </Markdown>
         </BlurFade>
       </section>
-      <section id="stats">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full">
-          {DATA.stats.map((stat, id) => (
-            <BlurFade key={stat.label} delay={BLUR_FADE_DELAY * 5 + id * 0.05}>
-              <Card className="text-center">
-                <CardHeader className="pb-2">
-                  <CardTitle className="text-4xl font-bold">{stat.number}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">{stat.label}</p>
-                </CardContent>
-              </Card>
-            </BlurFade>
-          ))}
+      <section id="stats" className="py-16">
+        <div className="space-y-12 w-full">
+          <BlurFade delay={BLUR_FADE_DELAY * 4}>
+            <div className="text-center space-y-4">
+              <h2 className="text-3xl font-mono font-bold tracking-tighter sm:text-4xl">
+                Impact & Results
+              </h2>
+              <p className="text-lg text-muted-foreground font-sans-body max-w-2xl mx-auto">
+                Proven track record of driving growth and delivering measurable results
+              </p>
+            </div>
+          </BlurFade>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 w-full max-w-4xl mx-auto">
+            {DATA.stats.map((stat, id) => (
+              <BlurFade key={stat.label} delay={BLUR_FADE_DELAY * 5 + id * 0.05}>
+                <div className="text-center space-y-4 p-8 rounded-xl bg-gradient-to-br from-white to-gray-50 border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300">
+                  <div className="space-y-2">
+                    <div className="text-5xl font-mono font-bold text-primary bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                      {stat.number}
+                    </div>
+                    <p className="text-sm font-sans-body text-muted-foreground font-medium uppercase tracking-wide">
+                      {stat.label}
+                    </p>
+                  </div>
+                </div>
+              </BlurFade>
+            ))}
+          </div>
         </div>
       </section>
       <section id="work" className="py-20">
@@ -206,31 +221,51 @@ export default async function Page() {
           </div>
         </div>
       </section>
-      <section id="testimonials">
-        <div className="space-y-12 w-full py-12">
+      <section id="testimonials" className="py-20">
+        <div className="space-y-12 w-full">
           <BlurFade delay={BLUR_FADE_DELAY * 15}>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="text-center space-y-6">
               <h2 className="text-3xl font-mono font-bold tracking-tighter sm:text-5xl">
                 {t('testimonials.title')}
               </h2>
+              <p className="text-lg text-muted-foreground font-sans-body max-w-2xl mx-auto">
+                Trusted by industry leaders and innovative companies
+              </p>
             </div>
           </BlurFade>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[800px] mx-auto">
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {DATA.testimonials.map((testimonial, id) => (
               <BlurFade
                 key={testimonial.author}
                 delay={BLUR_FADE_DELAY * 16 + id * 0.05}
               >
-                <Card className="h-full bg-card border border-border shadow-sm">
-                  <CardContent className="pt-6">
-                    <blockquote className="space-y-2">
-                      <p className="text-lg italic font-sans-body">&ldquo;{testimonial.quote}&rdquo;</p>
-                      <footer className="text-sm text-muted-foreground font-sans-body">
-                        — {testimonial.author}
-                      </footer>
-                    </blockquote>
-                  </CardContent>
-                </Card>
+                <div className="relative h-full p-8 rounded-xl bg-gradient-to-br from-white via-gray-50 to-blue-50 border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 group">
+                  {/* Quote Icon */}
+                  <div className="absolute top-6 left-6 text-4xl text-blue-200 group-hover:text-blue-300 transition-colors">
+                    &ldquo;
+                  </div>
+
+                  <blockquote className="space-y-6 pt-8">
+                    <p className="text-lg font-sans-body leading-relaxed text-gray-700 relative z-10">
+                      {testimonial.quote}
+                    </p>
+
+                    <footer className="flex items-center gap-4 pt-4 border-t border-gray-200">
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-mono font-bold text-lg">
+                        {testimonial.author.split(',')[0].charAt(0)}
+                      </div>
+                      <div>
+                        <div className="font-sans-body font-semibold text-gray-900">
+                          {testimonial.author.split(',')[1]?.trim() || testimonial.author}
+                        </div>
+                        <div className="text-sm text-muted-foreground font-sans-body">
+                          {testimonial.author.split(',')[0]?.trim()}
+                        </div>
+                      </div>
+                    </footer>
+                  </blockquote>
+                </div>
               </BlurFade>
             ))}
           </div>
