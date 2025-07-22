@@ -19,7 +19,7 @@ export interface ContactInfo {
     [key: string]: {
       name: string;
       url: string;
-      icon: ReactNode;
+      icon: React.ComponentType<{ className?: string }>;
       navbar: boolean;
     };
   };
@@ -56,7 +56,7 @@ export interface Project {
   links?: readonly {
     type: string;
     href: string;
-    icon: ReactNode;
+    icon: React.ComponentType<{ className?: string }>;
   }[];
   image?: string;
   video?: string;
@@ -71,7 +71,7 @@ export interface Hackathon {
   mlh?: string;
   links?: readonly {
     title: string;
-    icon: ReactNode;
+    icon: React.ComponentType<{ className?: string }>;
     href: string;
   }[];
 }
@@ -99,7 +99,7 @@ export interface Stat {
 
 export interface NavItem {
   href: string;
-  icon: ReactNode;
+  icon: React.ComponentType<{ className?: string }>;
   label: string;
 }
 
