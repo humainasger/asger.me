@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "Home",
+    "blog": "Blog"
+  },
+  "home": {
+    "title": "Finally, a marketer who gets it",
+    "subtitle": "Stop surviving. Start winning.",
+    "description": "10 years helping B2B SaaS companies grow. AI for the boring. Humans for the brilliant.",
+    "hero": {
+      "cta_primary": "Book free Marketing Therapy",
+      "cta_secondary": "See my work"
+    },
+    "aboutMe": "Dear fellow marketers",
+    "aboutText": "Remember why you started in marketing? The creativity? Making a difference? That rush when a campaign just works?\n\nYeah, I miss it too.\n\nThat's why I went freelance. To work with companies that dare to take chances. Who want marketing that moves the needle. And who understand that B2B doesn't have to mean boring.\n\nAfter 10 years in the B2B SaaS trenches, I know what works. And more importantly - what doesn't.\n\nNow I help others break free from spreadsheet hell and actually have fun with marketing again. One focused initiative at a time.",
+    "stats": {
+      "years": "Years in B2B SaaS",
+      "value": "USD in created value",
+      "mqls": "Generated MQLs"
+    },
+    "services": {
+      "title": "Services (no bullshit)",
+      "subtitle": "AI for the boring. Humans for the brilliant.",
+      "therapy": {
+        "title": "Marketing Therapy",
+        "price": "Free 30 min",
+        "description": "Tell me what keeps you up at night. No pitch. Just honest talk about your challenges."
+      },
+      "quickWins": {
+        "title": "Quick Wins",
+        "price": "From 5,000 kr",
+        "description": "Landing page in 4 days. Email sequence in 2 weeks. LinkedIn campaign audit. One-off projects with clear deadlines."
+      },
+      "sparring": {
+        "title": "Strategic Sparring",
+        "price": "1-2 days/week",
+        "description": "I become part of your team. Without filling your meeting rooms. Focused on execution, not PowerPoints."
+      },
+      "partner": {
+        "title": "Growth Partner",
+        "price": "Custom",
+        "description": "Let's build a growth engine that actually works. With clear goals, quick response time, and results you can feel."
+      }
+    },
+    "contactMe": "Ready to make marketing fun again?",
+    "contactSubtitle": "Start with a free Marketing Therapy session. 30 minutes. No sales. Just honest talk about how we get your marketing to move the needle.",
+    "contactCta": "Book free session",
+    "work": "Recent wins",
+    "education": "Education",
+    "skills": "Tools & Skills",
+    "projects": "Projects",
+    "testimonials": {
+      "title": "What others say"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "My thoughts and ideas",
+    "publishedOn": "Published on",
+    "viewsCount": "{count} views"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "footer": {
+    "rights": "© 2025 Asger Johannes Teglgaard",
+    "tagline": "PS: Yes, I also work from the boat in summer. Fair warning. ⛵"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "Hjem",
+    "blog": "Blog"
+  },
+  "home": {
+    "title": "Finally, a marketer who gets it",
+    "subtitle": "Stop surviving. Start winning.",
+    "description": "10 års erfaring med at få B2B SaaS virksomheder til at vokse. AI til det kedelige. Mennesker til det brillante.",
+    "hero": {
+      "cta_primary": "Book gratis Marketing Therapy",
+      "cta_secondary": "Se mit arbejde"
+    },
+    "aboutMe": "Kære fellow marketers",
+    "aboutText": "Husker du hvorfor du startede i marketing? Kreativiteten? At gøre en forskel? Det der sus når en kampagne bare virker?\n\nJa, jeg savner det også.\n\nDerfor er jeg gået freelance. For at arbejde med virksomheder der tør tage chancer. Der vil have marketing der flytter noget. Og som forstår at B2B ikke behøver betyde boring.\n\nEfter 10 år i B2B SaaS trenches ved jeg hvad der virker. Og vigtigere - hvad der ikke gør.\n\nNu hjælper jeg andre med at bryde fri fra spreadsheet hell og faktisk have det sjovt med marketing igen. Én fokuseret indsats ad gangen.",
+    "stats": {
+      "years": "År i B2B SaaS",
+      "value": "USD i skabt værdi",
+      "mqls": "Genererede MQLs"
+    },
+    "services": {
+      "title": "Services (uden bullshit)",
+      "subtitle": "AI til det kedelige. Mennesker til det brillante.",
+      "therapy": {
+        "title": "Marketing Therapy",
+        "price": "Gratis 30 min",
+        "description": "Fortæl mig hvad der holder dig vågen om natten. Ingen pitch. Bare ærlig snak om dine udfordringer."
+      },
+      "quickWins": {
+        "title": "Quick Wins",
+        "price": "Fra 5.000 kr",
+        "description": "Landing page på 4 dage. Email sequence på 2 uger. LinkedIn kampagne audit. One-off projekter med klare deadlines."
+      },
+      "sparring": {
+        "title": "Strategisk Sparring",
+        "price": "1-2 dage/uge",
+        "description": "Jeg bliver del af dit team. Uden at fylde dine mødelokaler. Med fokus på execution, ikke PowerPoints."
+      },
+      "partner": {
+        "title": "Growth Partner",
+        "price": "Custom",
+        "description": "Lad os bygge en growth-motor der faktisk virker. Med klare mål, kort responstid og resultater du kan mærke."
+      }
+    },
+    "contactMe": "Klar til at gøre marketing sjovt igen?",
+    "contactSubtitle": "Start med en gratis Marketing Therapy session. 30 minutter. Ingen salg. Bare ærlig snak om hvordan vi får din marketing til at flytte noget.",
+    "contactCta": "Book gratis session",
+    "work": "Seneste wins",
+    "education": "Uddannelse",
+    "skills": "Værktøjer & Skills",
+    "projects": "Projekter",
+    "testimonials": {
+      "title": "Hvad andre siger"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Mine tanker og ideer",
+    "publishedOn": "Udgivet den",
+    "viewsCount": "{count} visninger"
+  },
+  "theme": {
+    "light": "Lys",
+    "dark": "Mørk",
+    "system": "System"
+  },
+  "footer": {
+    "rights": "© 2025 Asger Johannes Teglgaard",
+    "tagline": "PS: Ja, jeg arbejder også fra båden om sommeren. Fair warning. ⛵"
+  }
+}
