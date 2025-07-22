@@ -103,6 +103,23 @@ export interface NavItem {
   label: string;
 }
 
+export interface Achievement {
+  category: string;
+  items: readonly string[];
+}
+
+export interface Certification {
+  name: string;
+  issuer: string;
+  year: string;
+  location: string;
+}
+
+export interface Additional {
+  category: string;
+  description: string;
+}
+
 // Main data structure
 export interface ResumeData {
   name: string;
@@ -123,6 +140,9 @@ export interface ResumeData {
   services: readonly Service[];
   testimonials: readonly Testimonial[];
   stats: readonly Stat[];
+  achievements: readonly Achievement[];
+  certifications: readonly Certification[];
+  additional: readonly Additional[];
 }
 
 // Component prop types

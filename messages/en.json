@@ -1,7 +1,8 @@
 {
   "nav": {
     "home": "Home",
-    "blog": "Blog"
+    "blog": "Blog",
+    "resume": "Resume"
   },
   "home": {
     "title": "Finally, a marketer who gets it",

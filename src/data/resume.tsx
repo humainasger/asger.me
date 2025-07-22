@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon, NotebookIcon, FileTextIcon } from "lucide-react";
 import { ResumeData } from "@/types";
 
 export const DATA: ResumeData = {
@@ -33,6 +33,7 @@ export const DATA: ResumeData = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "/resume", icon: FileTextIcon, label: "Resume" },
   ],
   contact: {
     email: "teglgaard@asger.me",
@@ -77,43 +78,164 @@ export const DATA: ResumeData = {
 
   work: [
     {
-      company: "KeyShot",
+      company: "Keyshot (Digizuite)",
       href: "https://keyshot.com",
-      badges: ["B2B SaaS", "Enterprise", "DAM"],
+      badges: ["B2B", "SaaS", "Enterprise", "DAM"],
       location: "Remote",
       title: "Sr. Growth Marketing Manager",
       logoUrl: "/keyshot.png",
-      start: "2023",
-      end: "2025",
+      start: "Jun 2023",
+      end: "present",
       description:
-        "Post-Acquisition Integration: Succesfuldt integreret to marketing teams uden at tabe momentum. Streamlined processer, bevaret team performance, øget efficiency.",
+        "Post-Acquisition Integration: Successfully integrated Digizuite's marketing operations post-acquisition. Streamlined marketing processes, leading to improved efficiency and team performance. Enhanced collaboration with sales teams to accelerate growth.",
+    },
+    {
+      company: "Opus Group",
+      href: "https://opusgroup.dk",
+      badges: ["B2B", "Tech", "Consulting"],
+      location: "Copenhagen, Denmark",
+      title: "Head of Marketing for LearnX",
+      logoUrl: "/opus.png",
+      start: "May 2023",
+      end: "January 2024",
+      description:
+        "Leadership & Project Execution at CoWeb: Founded and grew a successful marketing agency. Led a diverse team, delivering over 150 client projects. Specialized in performance marketing and conversion optimization, enhancing client online presence.",
     },
     {
       company: "KUBO Robotics",
-      badges: ["EdTech", "Market Entry", "B2B"],
+      badges: ["EdTech", "B2B"],
       href: "https://kubo-robot.com",
       location: "Copenhagen, Denmark",
       title: "Growth & Retention Manager",
       logoUrl: "/kubo.png",
-      start: "2021",
-      end: "2023",
+      start: "May 2021",
+      end: "April 2023",
       description:
-        "US Market Entry Success: 15.000+ kvalificerede leads gennem strategiske partnerskaber og paid media. Succesfuld US ekspansion, optimeret CAC.",
+        "Market Expansion at KUBO Robotics: Led growth strategy for U.S. market entry. Generated over 15,000 MQLs through strategic partnerships and paid media. Strengthened alignment between marketing and sales teams, improving conversion rates.",
     },
     {
       company: "QuickOrder",
       href: "https://quickorder.io",
-      badges: ["B2B SaaS", "Growth", "Scale-up"],
+      badges: ["SaaS", "B2B", "Food"],
       location: "Copenhagen, Denmark",
       title: "Head of Marketing",
       logoUrl: "/quickorder.png",
-      start: "2019",
-      end: "2021",
+      start: "Oct 2019",
+      end: "May 2021",
       description:
-        "10x værdistigning på 18 måneder: Fra $20M til $200M gennem systematisk growth marketing. 20% MoM vækst, skaleret SDR team.",
+        "Valuation Growth at QuickOrder: Increased company valuation tenfold from $20M to $200M. Implemented data-driven marketing strategies, achieving 20% month-over-month growth. Developed a scalable growth funnel, instrumental in SDR hiring and sales expansion.",
+    },
+    {
+      company: "Rambøll ENVIRON",
+      href: "https://ramboll.com",
+      badges: ["Consulting", "B2B"],
+      location: "Copenhagen, Denmark",
+      title: "Digital marketing & Webshop Leader",
+      logoUrl: "/ramboll.png",
+      start: "Feb 2019",
+      end: "Sep 2021",
+      description:
+        "Digital transformation and e-commerce leadership in environmental consulting sector.",
+    },
+    {
+      company: "CoWeb",
+      href: "https://coweb.dk",
+      badges: ["Agency", "B2B"],
+      location: "Copenhagen, Denmark",
+      title: "Founder",
+      logoUrl: "/coweb.png",
+      start: "Oct 2015",
+      end: "Nov 2018",
+      description:
+        "Founded and operated a successful digital marketing agency specializing in B2B lead generation.",
+    },
+    {
+      company: "TreeTime",
+      href: "https://treetime.dk",
+      badges: ["E-commerce", "B2C"],
+      location: "Copenhagen, Denmark",
+      title: "Founder",
+      logoUrl: "/treetime.png",
+      start: "Sep 2014",
+      end: "Sep 2018",
+      description:
+        "Founded and operated an e-commerce business in the sustainable products sector.",
     },
   ],
-  education: [],
+  education: [
+    {
+      school: "University College Lillebælt",
+      href: "https://ucl.dk",
+      degree: "AP Graduate in Marketing Management",
+      logoUrl: "/ucl.png",
+      start: "2015",
+      end: "2017",
+    },
+  ],
+  achievements: [
+    {
+      category: "Strategic Leadership at Keyshot",
+      items: [
+        "Successfully integrated Digizuite's marketing operations post-acquisition.",
+        "Streamlined marketing processes, leading to improved efficiency and team performance.",
+        "Enhanced collaboration with sales teams to accelerate growth.",
+      ],
+    },
+    {
+      category: "Market Expansion at KUBO Robotics",
+      items: [
+        "Led growth strategy for U.S. market entry.",
+        "Generated over 15,000 MQLs through strategic partnerships and paid media.",
+        "Strengthened alignment between marketing and sales teams, improving conversion rates.",
+      ],
+    },
+    {
+      category: "Valuation Growth at QuickOrder",
+      items: [
+        "Increased company valuation tenfold from $20M to $200M.",
+        "Implemented data-driven marketing strategies, achieving 20% month-over-month growth.",
+        "Developed a scalable growth funnel, instrumental in SDR hiring and sales expansion.",
+      ],
+    },
+    {
+      category: "Leadership & Project Execution at CoWeb",
+      items: [
+        "Founded and grew a successful marketing agency.",
+        "Led a diverse team, delivering over 150 client projects.",
+        "Specialized in performance marketing and conversion optimization, enhancing client online presence.",
+      ],
+    },
+  ],
+  certifications: [
+    {
+      name: "Certified Growth Hacker",
+      issuer: "Growth Tribe",
+      year: "2020",
+      location: "Copenhagen, Denmark",
+    },
+  ],
+  additional: [
+    {
+      category: "ABM Expertise and Knowledge of ABM Platforms",
+      description: "Proficient in implementing Account-Based Marketing strategies, leveraging intent data, and engaging ideal customer profiles; familiar with ABM platforms like N.Rich and their role in enhancing B2B go-to-market strategies, particularly targeting enterprise buyers.",
+    },
+    {
+      category: "Collaboration with Sales Teams",
+      description: "Extensive experience working in selected organizations to build established outbound and inbound marketing strategies; working closely with sales and other revenue teams to achieve common goals.",
+    },
+    {
+      category: "Location",
+      description: "Based in Europe; willing and able to travel across Europe 1-2 times per quarter. Uses co-working remote.",
+    },
+    {
+      category: "Leadership Skills",
+      description: "Demonstrated ability to build and manage high-performing teams; strategic leader focused on creating a team that is greater than the sum of its parts.",
+    },
+    {
+      category: "Strategic Vision",
+      description: "Strong strategic planning skills with a focus on data-driven decision-making, ABM strategies, and measurable results.",
+    },
+  ],
   stats: [
     {
       number: "10+",
